@@ -22,7 +22,7 @@ Displays a navigation menu allowing user to jump to any heading in the page cont
 Adds hierarchical \"table of contents\"-type functionality to any page on your WordPress site. Only top-level sections are initally visible, with show/hide buttons allowing your visitors to view an outline of the content in more detail. Heading Jumper can either display as a widget or at the top of the content.
 
 ## Installation
-1. Upload `heading-jumper.php` to the `/wp-content/plugins/` directory
+1. Upload contents of this repository to the `/wp-content/plugins/` directory
 2. Activate the plugin through the \'Plugins\' menu in WordPress
 3. Head over to Settings -> Reading to set a couple quick display options.
 
