@@ -1,13 +1,11 @@
 # Heading Jumper
 
 Contributors: peterste
-
 Tags: table of contents, navigation,
 
 Requires at least: 5.2
 
 Tested up to: 5.2
-
 Requires PHP: 7.1
 
 Stable tag: 5.2
