@@ -1,6 +1,7 @@
 # Heading Jumper
 
 Contributors: peterste  
+
 Tags: table of contents, navigation,
 
 Requires at least: 5.2
@@ -37,10 +38,12 @@ Remember that if you choose widget display you still need to add the widget to a
 
 ## Changelog
 *1.0.0 
+
 ...Nothing\'s changed yet!
 
 ## Upgrade Notice
 *1.0.0
+
 ...First version.
 
 ## Credits
