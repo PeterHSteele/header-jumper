@@ -1,7 +1,6 @@
 # Heading Jumper
 
-Contributors: peterste
-
+Contributors: peterste  
 Tags: table of contents, navigation,
 
 Requires at least: 5.2
@@ -33,16 +32,16 @@ Yes. Add the following line to your theme\'s functions.php.
 
 ### Why isn\'t the widget showing up?
 Remember that if you choose widget display you still need to add the widget to a sidebar to see it :)
-== Screenshots ==
+## Screenshots
 1. ![Heading Jumper on a page.](./heading-jumper-screenshot.png "Heading Jumper")
 
 ## Changelog
-= 1.0.0 =
-Nothing\'s changed yet!
+*1.0.0 
+...Nothing\'s changed yet!
 
 ## Upgrade Notice
-= 1.0.0 =
-First version.
+*1.0.0
+...First version.
 
 ## Credits
 Built on [Wordpress Plugin Boilerplate](http://wppb.io/, "wordpress plugin boilerplate")
