@@ -1,0 +1,34 @@
+#hj-container ul{
+	padding: 0;
+	border: none;
+	margin: 0;
+	position: static;
+	list-style: none
+}
+
+#hj-container nav > ul{
+	margin: 0 0 0 0;
+}
+
+#hj-container nav li:after{
+	display:table;
+	content:"";
+	clear:both;
+}
+
+#hj-container li > ul{
+	padding-left: .75em;
+	border-left: 1px dotted #404040;
+}
+
+#hj-container button {
+	float: right;
+	
+	padding:0;
+	border:none;	
+	outline:none;	
+}
+
+.heading-jumper-no-display{
+	display:none;
+}

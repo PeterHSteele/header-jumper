@@ -3,11 +3,11 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       http://example.com
+ * @link       github.com/peterhsteele/heading-jumper
  * @since      1.0.0
  *
- * @package    Header_Jumper
- * @subpackage Header_Jumper/includes
+ * @package    Heading_Jumper
+ * @subpackage Heading_Jumper/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Header_Jumper
- * @subpackage Header_Jumper/includes
- * @author     Your Name <email@example.com>
+ * @package    Heading_Jumper
+ * @subpackage Heading_Jumper/includes
+ * @author     Peter Steele steele.peter.3@gmail.com 
  */
-class Header_Jumper_Loader {
+class Heading_Jumper_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.
@@ -42,6 +42,15 @@ class Header_Jumper_Loader {
 	protected $filters;
 
 	/**
+	 * The array of filters registered with WordPress.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      array    $filters    The filters registered with WordPress to remove when the plugin loads.
+	 */
+	protected $filters_to_remove;
+
+	/**
 	 * Initialize the collections used to maintain the actions and filters.
 	 *
 	 * @since    1.0.0
@@ -50,6 +59,7 @@ class Header_Jumper_Loader {
 
 		$this->actions = array();
 		$this->filters = array();
+		$this->filters_to_remove = array();
 
 	}
 
@@ -79,6 +89,18 @@ class Header_Jumper_Loader {
 	 */
 	public function add_filter( $hook, $component, $callback, $priority = 10, $accepted_args = 1 ) {
 		$this->filters = $this->add( $this->filters, $hook, $component, $callback, $priority, $accepted_args );
+	}
+
+	/**
+	 * Schedule a filter to be removed.
+	 *
+	 * @since    1.0.0
+	 * @param    string               $hook             The name of the WordPress filter that is being registered.
+	 * @param    string               $callback         The name of the function definition in wordpress core.
+	 */
+
+	public function remove_filter( $hook, $callback ){
+		$this->filters_to_remove = $this->add( $this->filters_to_remove, $hook, null, $callback, null, null );
 	}
 
 	/**
@@ -115,6 +137,10 @@ class Header_Jumper_Loader {
 	 * @since    1.0.0
 	 */
 	public function run() {
+
+		foreach( $this->filters_to_remove as $hook){
+			remove_filter( $hook['hook'], $hook['callback'] );
+		}
 
 		foreach ( $this->filters as $hook ) {
 			add_filter( $hook['hook'], array( $hook['component'], $hook['callback'] ), $hook['priority'], $hook['accepted_args'] );

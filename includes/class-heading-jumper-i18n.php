@@ -6,11 +6,11 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       http://example.com
+ * @link       http://github.com/peterhsteele/heading-jumper
  * @since      1.0.0
  *
- * @package    Header_Jumper
- * @subpackage Header_Jumper/includes
+ * @package    Heading_Jumper
+ * @subpackage Heading_Jumper/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Header_Jumper
- * @subpackage Header_Jumper/includes
- * @author     Your Name <email@example.com>
+ * @package    Heading_Jumper
+ * @subpackage Heading_Jumper/includes
+ * @author     Peter Steele steele.peter.3@gmail.com
  */
-class Header_Jumper_i18n {
+class Heading_Jumper_i18n {
 
 
 	/**
@@ -35,7 +35,7 @@ class Header_Jumper_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'header-jumper',
+			'heading-jumper',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);
