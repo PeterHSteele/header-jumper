@@ -1,11 +1,19 @@
 # Heading Jumper
+
 Contributors: peterste
+
 Tags: table of contents, navigation,
+
 Requires at least: 5.2
+
 Tested up to: 5.2
+
 Requires PHP: 7.1
+
 Stable tag: 5.2
+
 License: GPLv2 and later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Displays a navigation menu allowing user to jump to any heading in the page content.
