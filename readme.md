@@ -29,7 +29,7 @@ Adds hierarchical \"table of contents\"-type functionality to any page on your W
 ## Frequently Asked Questions
 ### Can I ditch the default css?
 Yes. Add the following line to your theme\'s functions.php.
-    `add_filter( \'disable_heading_jumper_css\', true);`
+    `add_filter( 'disable_heading_jumper_css', true);`
 
 ### Why isn\'t the widget showing up?
 Remember that if you choose widget display you still need to add the widget to a sidebar to see it :)
