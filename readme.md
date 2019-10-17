@@ -1,20 +1,20 @@
 # Heading Jumper
 
-Contributors: peterste  
+**Contributors**: peterste  
 
-Tags: table of contents, navigation,
+**Tags**: table of contents, navigation,
 
-Requires at least: 5.2
+**Requires at least**: 5.2
 
-Tested up to: 5.2
+**Tested up to**: 5.2
 
-Requires PHP: 7.1
+**Requires PHP**: 7.1
 
-Stable tag: 5.2
+**Stable tag**: 5.2
 
-License: GPLv2 and later
+**License**: GPLv2 and later
 
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+**License URI**: http://www.gnu.org/licenses/gpl-2.0.html
 
 Displays a navigation menu allowing user to jump to any heading in the page content.
 
@@ -37,12 +37,12 @@ Remember that if you choose widget display you still need to add the widget to a
 1. ![Heading Jumper on a page.](./heading-jumper-screenshot.png "Heading Jumper")
 
 ## Changelog
-*1.0.0 
+* 1.0.0 
 
 ...Nothing\'s changed yet!
 
 ## Upgrade Notice
-*1.0.0
+* 1.0.0
 
 ...First version.
 
